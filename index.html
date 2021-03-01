@@ -198,10 +198,6 @@
         </div>
       </div>
       <div class="row">
-        <script>
-          n =  new Date();
-          m = n.getMonth() + 1;
-        </script>
         <div class="col-md-4">
           <div class="work-box">
             <a href="img/Detalle_Gs España.jpg" data-lightbox="gallery-mf">
@@ -213,7 +209,16 @@
                   <div class="col-sm-8">
                     <h2 class="w-title">Gs España</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Business intelligence</span> / <span class="w-date">22 Ene 2021 - Actualidad '<script> document.getElementById("date").innerHTML = "("+m+" )"' </script> </span>
+                      <span class="w-ctegory">Business intelligence</span> / <span class="w-date">22 Ene 2021 - Actualidad </span>
+                      <script>
+                        n =  new Date();
+                        y = n.getFullYear();
+                        m = n.getMonth() + 1;
+                        d = n.getDate();
+                        document.getElementById("dateeee").innerHTML = m + "/" + d + "/" + y;
+                      </script>
+                      <p id="dateeee"></p>
+                      
                     </div>
                   </div>
                   <div class="col-sm-4">
